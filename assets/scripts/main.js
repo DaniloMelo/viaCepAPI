@@ -6,6 +6,7 @@ const searchCep = function(item){
             document.querySelector("#"+result).value = item[result]
         }
     }
+
 }
 
 inputCep.addEventListener("blur", ()=>{
@@ -16,4 +17,3 @@ inputCep.addEventListener("blur", ()=>{
         .then(data => searchCep(data))
         .catch(e => alert(`Ops, algo não saiu como esperado! Erro:${e}`))
 })
-
